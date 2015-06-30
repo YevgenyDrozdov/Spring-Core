@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="xml.beanpostprocessor.RunThisMethodBeanPostProcessor"></bean>
+
+    <bean class="xml.beanpostprocessor.BenchmarkBeanPostProcessor" />
+
+    <bean class="xml.beanpostprocessor.TransactionAnnotationBeanPostProcessor" />
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+    <bean class="xml.beanpostprocessor.Baby" scope="singleton">
+        <constructor-arg index="0" value="Mashia" />
+        <constructor-arg index="1" value="10" />
+    </bean>
+
+</beans>

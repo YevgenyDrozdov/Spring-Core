@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="xml.injection.ArtBookShelf">
+        <property name="books">
+            <list value-type="java.lang.String">
+                <value>The art of dancing</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="xml.injection.JavaBookShelf">
+        <property name="books">
+            <list value-type="java.lang.String">
+                <value>Java in action</value>
+                <value>Thinking in Java</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
