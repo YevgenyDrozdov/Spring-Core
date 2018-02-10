@@ -9,7 +9,7 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("init-method-context.xml");
         //context.getBean(Human.class);
 
-        System.out.println(Integer.MAX_VALUE);
+        //System.out.println(Integer.MAX_VALUE);
     }
 
 }
